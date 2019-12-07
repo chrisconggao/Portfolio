@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>CONG GAO</div>
+                </div>
+            </div>
+        
+        </div>
+
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image: url(images/book&design.jpg);"></div>
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/iconfinder_Knowledge_3533407.png" height="150">
+                            </div>
+
+                            <div class="subtitle">Education background</div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: url(images/handdrawing.jpg);"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="images/iconfinder_Task_management_3533402.png" height="150">
+                                </div>
+    
+                                <div class="subtitle">Working Experience</div>
+                            </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: url(images/tools.jpg);"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="images/iconfinder_Innovative_mind_3533409.png" height="150">
+                                </div>
+    
+                                <div class="subtitle">Special Skills</div>
+                            </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: url(images/chess.jpg);"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="images/iconfinder_Achievement_3533414.png" height="150">
+                                </div>
+    
+                                <div class="subtitle">Certification</div>
+                            </div>
+                    </div>
+                    
+                    <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: url(images/teamwork.jpg);"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="images/iconfinder_Teamwork_3533401.png" height="150">
+                                </div>
+    
+                                <div class="subtitle">Teamwork</div>
+                            </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: url(images/gitar.jpg);"></div>
+    
+                            <div class="img-text-wrapper">
+                                <div class="logo-wrapper">
+                                    <img src="images/iconfinder_Passion_3533406.png" height="150">
+                                </div>
+    
+                                <div class="subtitle">Interests</div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+</body>
+<script>
+    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioitems.forEach(portfolioitem => {
+        portfolioitem.addEventListener('mouseover', () => {
+            portfolioitem.childNodes[1].classList.add('img-brighten');
+        })
+    })
+
+    portfolioitems.forEach(portfolioitem => {
+        portfolioitem.addEventListener('mouseout', () => {
+            portfolioitem.childNodes[1].classList.remove('img-brighten');
+        })
+    })
+
+</script>
+</html>
